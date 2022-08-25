@@ -2,7 +2,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Maps {
+
+    // @SuppressWarnings("rawtypes")
+
     public static void main(String[] args) {
+
         HashMap<String, Integer> map = new HashMap<>();
         map.put("clave1", 10);
         map.put("clave2", 20);
@@ -12,7 +16,7 @@ public class Maps {
         map.remove("clave2");
         System.out.println(map);
 
-        for (Map.Entry elemento : map.entrySet()){
+        for (Map.Entry <String, Integer> elemento : map.entrySet()){
             System.out.println("Elemento clave, valor es: " + elemento.getKey() +" = "+elemento.getValue() );
         }
 
